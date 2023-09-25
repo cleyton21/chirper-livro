@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+#table-livro tbody td {
+    padding: 5px; /* Espaçamento interno menor */
+    line-height: 2; /* Altura da linha menor */
+    font-size: 15px;
+}
+
+#table-user tbody td {
+    padding: 5px; /* Espaçamento interno menor */
+    line-height: 1; /* Altura da linha menor */
+    font-size: 15px;
+}
+
+.disabled-link {
+    pointer-events: none; /* Impede que o link seja clicado */
+    opacity: 0.6; /* Opacidade reduzida para indicar visualmente que o link está desabilitado */
+}
