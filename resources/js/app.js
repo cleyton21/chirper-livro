@@ -6,16 +6,19 @@ window.Alpine = Alpine;
 
 Alpine.start();
 
+var translationUrl = document.querySelector('meta[name="translation-url"]').getAttribute('content');
 // tradução do datatable
 var table = new DataTable('#table-user', {
     language: {
-        url: '//cdn.datatables.net/plug-ins/1.13.6/i18n/pt-BR.json',
+        // url: '//cdn.datatables.net/plug-ins/1.13.6/i18n/pt-BR.json',
+        url: translationUrl
     },
 });
 
 var table = new DataTable('#table-livro', {
     language: {
-        url: '//cdn.datatables.net/plug-ins/1.13.6/i18n/pt-BR.json',
+        // url: '//cdn.datatables.net/plug-ins/1.13.6/i18n/pt-BR.json',
+        url: translationUrl
     },
 });
 
